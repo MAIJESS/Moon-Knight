@@ -1,0 +1,498 @@
+{
+  "id": "moonknight-theme",
+  "name": "Moon Knight",
+  "version": "1.0.0",
+  "apiVersion": 18,
+  "entry": "plugin.js",
+  "description": "Tema para toda la app inspirado en Moon Knight: noche plateada, oro de Khonshu y rojo de Mr. Knight, con logo de luna creciente y reproductor lunar.",
+  "hosts": [],
+  "capabilities": [
+    "screen"
+  ],
+  "categories": [
+    "themes"
+  ],
+  "color": "#DDE3F0",
+  "icon": "icon.png",
+  "screen": {
+    "label": "Moon Knight",
+    "labelEn": "Moon Knight",
+    "opensFrom": [
+      "settings"
+    ],
+    "settingsButton": {
+      "label": "Ver presentación",
+      "labelEn": "See presentation"
+    }
+  },
+  "appThemes": [
+    {
+      "id": "moonknight-moon",
+      "name": {
+        "es": "Caballero Luna",
+        "en": "Moon Knight"
+      },
+      "colors": {
+        "onAccent": "#000000",
+        "onFocus": "#000000",
+        "scrim": "#000000",
+        "accent": "#DDE3F0",
+        "focus": "#F4D35E",
+        "background": "#04060C",
+        "surface": "#0B1020",
+        "surfaceHigh": "#151D36",
+        "railPanel": "#080C18",
+        "textPrimary": "#F4F6FB",
+        "textSecondary": "#A3ACC2",
+        "outline": "#2A3552",
+        "border": "#3B4666",
+        "favorite": "#F4D35E",
+        "error": "#FF4D5E",
+        "success": "#3DDC97",
+        "warning": "#F4D35E",
+        "placeholderTop": "#151D36",
+        "placeholderBottom": "#080C18"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#04060C",
+          "#0A1226"
+        ],
+        "angle": 180
+      },
+      "shape": {
+        "cardRadius": 16,
+        "channelRadius": 16,
+        "buttonRadius": 28,
+        "chipRadius": 24,
+        "dialogRadius": 22,
+        "inputRadius": 14,
+        "dialogBorder": 1,
+        "menuBorder": 1,
+        "headerBorder": 1,
+        "cardBorder": 1,
+        "panelBorder": 1
+      },
+      "typography": {
+        "scale": 1.04,
+        "titleScale": 1.1,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardShadow": 0.4,
+        "dialogShadow": 0.85,
+        "heroScrim": 0.9
+      },
+      "motion": {
+        "focusZoom": 1.06,
+        "crossfadeMs": 450,
+        "heroDrift": "on"
+      },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.4,
+        "seekBarScale": 1.25,
+        "labelScale": 1.05,
+        "buttonShape": "circle"
+      },
+      "tv": {
+        "typography": {
+          "scale": 1.0
+        },
+        "player": {
+          "buttonScale": 1.15,
+          "playButtonScale": 1.5,
+          "seekBarScale": 1.4
+        }
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#DDE3F0",
+            "#D4AF37",
+            "#F0364A",
+            "#7FB2FF"
+          ]
+        },
+        "colors.focus": {
+          "swatches": [
+            "#F4D35E",
+            "#F4F6FB",
+            "#DDE3F0",
+            "#F0364A"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 0,
+          "max": 20
+        },
+        "motion.crossfadeMs": {
+          "min": 0,
+          "max": 600
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.3
+        },
+        "background": true
+      },
+      "pluginColors": "override",
+      "experience": "full",
+      "logo": {
+        "wordmark": {
+          "size": [
+            192,
+            42
+          ],
+          "paths": [
+            {
+              "d": "M29 2.8A19 19 0 1 0 29 37.2A17.3 17.3 0 1 1 29 2.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 4H56V36H48ZM58 19L72 4H82L66 20ZM66 19L82 36H72L58 23ZM92 4H100V36H92ZM110 4H118V36H110ZM134 4H142V36H134ZM110 4H120L142 36H132ZM160 4H180L188 12V28L180 36H160L152 28V12ZM163 12L160 15V25L163 28H177L180 25V15L177 12Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 40H188V42H48Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M37.5 11A2.5 2.5 0 1 0 42.5 11A2.5 2.5 0 1 0 37.5 11Z",
+              "fill": "accent"
+            }
+          ]
+        },
+        "mark": {
+          "size": [
+            44,
+            44
+          ],
+          "paths": [
+            {
+              "d": "M31 4.8A19 19 0 1 0 31 39.2A17.3 17.3 0 1 1 31 4.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M35 12A3 3 0 1 0 41 12A3 3 0 1 0 35 12Z",
+              "fill": "accent"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "moonknight-khonshu",
+      "name": {
+        "es": "Khonshu",
+        "en": "Khonshu"
+      },
+      "colors": {
+        "onAccent": "#000000",
+        "onFocus": "#000000",
+        "scrim": "#000000",
+        "accent": "#D4AF37",
+        "focus": "#F4F6FB",
+        "background": "#070605",
+        "surface": "#12100B",
+        "surfaceHigh": "#1E1A10",
+        "railPanel": "#0E0C08",
+        "textPrimary": "#F6F0DF",
+        "textSecondary": "#B5AB8E",
+        "outline": "#4A3F1E",
+        "border": "#D4AF37",
+        "favorite": "#D4AF37",
+        "error": "#FF5A4D",
+        "success": "#6FD98B",
+        "warning": "#F4D35E",
+        "placeholderTop": "#1E1A10",
+        "placeholderBottom": "#0E0C08"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#070605",
+          "#14100A"
+        ],
+        "angle": 170
+      },
+      "shape": {
+        "cardRadius": 0,
+        "channelRadius": 0,
+        "buttonRadius": 0,
+        "chipRadius": 0,
+        "dialogRadius": 2,
+        "inputRadius": 0,
+        "dialogBorder": 2,
+        "menuBorder": 2,
+        "headerBorder": 1,
+        "cardBorder": 2,
+        "panelBorder": 2
+      },
+      "typography": {
+        "scale": 1.04,
+        "titleScale": 1.1,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardShadow": 0.4,
+        "dialogShadow": 0.85,
+        "heroScrim": 0.9
+      },
+      "motion": {
+        "focusZoom": 1.07,
+        "crossfadeMs": 300,
+        "heroDrift": "off"
+      },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.4,
+        "seekBarScale": 1.25,
+        "labelScale": 1.05,
+        "buttonShape": "square"
+      },
+      "tv": {
+        "typography": {
+          "scale": 1.0
+        },
+        "player": {
+          "buttonScale": 1.15,
+          "playButtonScale": 1.5,
+          "seekBarScale": 1.4
+        }
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#DDE3F0",
+            "#D4AF37",
+            "#F0364A",
+            "#7FB2FF"
+          ]
+        },
+        "colors.focus": {
+          "swatches": [
+            "#F4D35E",
+            "#F4F6FB",
+            "#DDE3F0",
+            "#F0364A"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 0,
+          "max": 20
+        },
+        "motion.crossfadeMs": {
+          "min": 0,
+          "max": 600
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.3
+        },
+        "background": true
+      },
+      "pluginColors": "override",
+      "experience": "light",
+      "logo": {
+        "wordmark": {
+          "size": [
+            192,
+            42
+          ],
+          "paths": [
+            {
+              "d": "M29 2.8A19 19 0 1 0 29 37.2A17.3 17.3 0 1 1 29 2.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 4H56V36H48ZM58 19L72 4H82L66 20ZM66 19L82 36H72L58 23ZM92 4H100V36H92ZM110 4H118V36H110ZM134 4H142V36H134ZM110 4H120L142 36H132ZM160 4H180L188 12V28L180 36H160L152 28V12ZM163 12L160 15V25L163 28H177L180 25V15L177 12Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 40H188V42H48Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M37.5 11A2.5 2.5 0 1 0 42.5 11A2.5 2.5 0 1 0 37.5 11Z",
+              "fill": "accent"
+            }
+          ]
+        },
+        "mark": {
+          "size": [
+            44,
+            44
+          ],
+          "paths": [
+            {
+              "d": "M31 4.8A19 19 0 1 0 31 39.2A17.3 17.3 0 1 1 31 4.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M35 12A3 3 0 1 0 41 12A3 3 0 1 0 35 12Z",
+              "fill": "accent"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "moonknight-mr-knight",
+      "name": {
+        "es": "Señor Caballero",
+        "en": "Mr. Knight"
+      },
+      "colors": {
+        "onAccent": "#000000",
+        "onFocus": "#000000",
+        "scrim": "#000000",
+        "accent": "#F0364A",
+        "focus": "#F4F6FB",
+        "background": "#050506",
+        "surface": "#100A0C",
+        "surfaceHigh": "#1E1216",
+        "railPanel": "#0B0709",
+        "textPrimary": "#F7F2F3",
+        "textSecondary": "#B3A4A8",
+        "outline": "#4A2229",
+        "border": "#7A1420",
+        "favorite": "#F0364A",
+        "error": "#FF6B6B",
+        "success": "#3DDC97",
+        "warning": "#F4D35E",
+        "placeholderTop": "#1E1216",
+        "placeholderBottom": "#0B0709"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#050506",
+          "#120609"
+        ],
+        "angle": 190
+      },
+      "shape": {
+        "cardRadius": 6,
+        "channelRadius": 6,
+        "buttonRadius": 8,
+        "chipRadius": 8,
+        "dialogRadius": 8,
+        "inputRadius": 6,
+        "dialogBorder": 1,
+        "menuBorder": 1,
+        "headerBorder": 1,
+        "cardBorder": 1,
+        "panelBorder": 1
+      },
+      "typography": {
+        "scale": 1.04,
+        "titleScale": 1.1,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardShadow": 0.4,
+        "dialogShadow": 0.85,
+        "heroScrim": 0.9
+      },
+      "motion": {
+        "focusZoom": 1.06,
+        "crossfadeMs": 220,
+        "heroDrift": "off"
+      },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.4,
+        "seekBarScale": 1.25,
+        "labelScale": 1.05,
+        "buttonShape": "rounded"
+      },
+      "tv": {
+        "typography": {
+          "scale": 1.0
+        },
+        "player": {
+          "buttonScale": 1.15,
+          "playButtonScale": 1.5,
+          "seekBarScale": 1.4
+        }
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#DDE3F0",
+            "#D4AF37",
+            "#F0364A",
+            "#7FB2FF"
+          ]
+        },
+        "colors.focus": {
+          "swatches": [
+            "#F4D35E",
+            "#F4F6FB",
+            "#DDE3F0",
+            "#F0364A"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 0,
+          "max": 20
+        },
+        "motion.crossfadeMs": {
+          "min": 0,
+          "max": 600
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.3
+        },
+        "background": true
+      },
+      "pluginColors": "override",
+      "experience": "full",
+      "logo": {
+        "wordmark": {
+          "size": [
+            192,
+            42
+          ],
+          "paths": [
+            {
+              "d": "M29 2.8A19 19 0 1 0 29 37.2A17.3 17.3 0 1 1 29 2.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 4H56V36H48ZM58 19L72 4H82L66 20ZM66 19L82 36H72L58 23ZM92 4H100V36H92ZM110 4H118V36H110ZM134 4H142V36H134ZM110 4H120L142 36H132ZM160 4H180L188 12V28L180 36H160L152 28V12ZM163 12L160 15V25L163 28H177L180 25V15L177 12Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M48 40H188V42H48Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M37.5 11A2.5 2.5 0 1 0 42.5 11A2.5 2.5 0 1 0 37.5 11Z",
+              "fill": "accent"
+            }
+          ]
+        },
+        "mark": {
+          "size": [
+            44,
+            44
+          ],
+          "paths": [
+            {
+              "d": "M31 4.8A19 19 0 1 0 31 39.2A17.3 17.3 0 1 1 31 4.8Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M35 12A3 3 0 1 0 41 12A3 3 0 1 0 35 12Z",
+              "fill": "accent"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
